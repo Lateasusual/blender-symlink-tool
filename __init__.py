@@ -1,4 +1,3 @@
-import bpy
 from .obj_operators import *
 from .obj_panels import *
 
@@ -14,7 +13,8 @@ bl_info = {
 
 classes = {
     VIEW3D_PT_SymlinkPanel,
-    SYMLINK_OT_CreateLink
+    SYMLINK_OT_CreateLink,
+    SYMLINK_OT_LinkNew
 }
 
 

@@ -16,4 +16,10 @@ class VIEW3D_PT_SymlinkPanel(bpy.types.Panel):
     def draw(self, context):
         layout = self.layout
         row = layout.row()
-        row.label(text="symlink panel")
+        row.label(text="Create a link")
+        row = layout.row()
+        row.operator('symlink.create_link')
+        row = layout.row()
+        row.label(text="Create a link and link from it")
+        row = layout.row()
+        row.operator('symlink.link_import')
